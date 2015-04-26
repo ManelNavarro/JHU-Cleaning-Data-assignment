@@ -57,16 +57,15 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </div>
 
 
-<p>Tidy dataset in file <strong>X2.txt</strong> includes a total of 180 rows of 68 variables. Variables are divided in three types:</p>
-<ol style="list-style-type: decimal">
-<li><strong>Subject</strong>: The Id of the subject who performed the activity for each window sample.</li>
-</ol>
-<ul>
-<li>Its range is from 1 to 30.</li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li><strong>Activity</strong>: The name of the activity performed. It can have 6 values:</li>
-</ol>
+<p>Tidy dataset in file <strong>X2.txt</strong> includes a total of 180 rows of 68 variables.</p>
+<div id="subject" class="section level4">
+<h4><strong>Subject</strong></h4>
+<p>The Id of the subject who performed the activity for each window sample.</p>
+<p>Its range is from 1 to 30.</p>
+</div>
+<div id="activity" class="section level4">
+<h4><strong>Activity</strong></h4>
+<p>The name of the activity performed. It can have 6 values:</p>
 <ul>
 <li>WALKING</li>
 <li>WALKING_UPSTAIRS</li>
@@ -75,9 +74,10 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li>STANDING</li>
 <li>LAYING</li>
 </ul>
-<ol start="3" style="list-style-type: decimal">
-<li><strong>Average Measures</strong>: A list of 66 measures averaged per Subject and Activity. I.e. the average of all observations perfomed by each subject on each activity. The measures are just a selection of the original dataset, namely those containing means and standard deviations of the Samsung collected signals. Variable names are the same of the original experiment, with a <strong>“mean()”</strong> or <strong>“std()”</strong> suffix for the mean and standard deviation of the signals, respectively, and an <strong>“Avg.”</strong> prefix to indicate these have been averaged across all observations per Subject and Activity. All variables are numeric. Original measures are normalized and bounded within [-1,1].</li>
-</ol>
+</div>
+<div id="average-measures" class="section level4">
+<h4><strong>Average Measures</strong></h4>
+<p>A list of 66 measures averaged per Subject and Activity. I.e. the average of all observations perfomed by each subject on each activity. The measures are just a selection of the original dataset, namely those containing means and standard deviations of the Samsung collected signals. Variable names are the same of the original experiment, with a <strong>“mean()”</strong> or <strong>“std()”</strong> suffix for the mean and standard deviation of the signals, respectively, and an <strong>“Avg.”</strong> prefix to indicate these have been averaged across all observations per Subject and Activity. All variables are numeric. Original measures are normalized and bounded within [-1,1].</p>
 <p>Explanation of Samsung originally collected signals (“features”):</p>
 <p>The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix ‘t’ to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.</p>
 <p>Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).</p>
@@ -151,6 +151,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li>Avg. fBodyBodyGyroJerkMag-mean()</li>
 <li>Avg. fBodyBodyGyroJerkMag-std()</li>
 </ul>
+</div>
 
 
 </div>

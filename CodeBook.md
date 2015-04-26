@@ -4,13 +4,15 @@ author: "Manel Navarro"
 output: html_document
 ---
 
-Tidy dataset in file **X2.txt** includes a total of 180 rows of 68 variables. Variables are divided in three types:
+Tidy dataset in file **X2.txt** includes a total of 180 rows of 68 variables.
 
-1. **Subject**: The Id of the subject who performed the activity for each window sample.
+#### **Subject**
+The Id of the subject who performed the activity for each window sample.
 
-+ Its range is from 1 to 30.
+Its range is from 1 to 30.
 
-2. **Activity**: The name of the activity performed. It can have 6 values:
+#### **Activity**
+The name of the activity performed. It can have 6 values:
 
 + WALKING
 + WALKING_UPSTAIRS
@@ -19,7 +21,8 @@ Tidy dataset in file **X2.txt** includes a total of 180 rows of 68 variables. Va
 + STANDING
 + LAYING
 
-3. **Average Measures**: A list of 66 measures averaged per Subject and Activity. I.e. the average of all observations perfomed by each subject on each activity. The measures are just a selection of the original dataset, namely those containing means and standard deviations of the Samsung collected signals. Variable names are the same of the original experiment, with a **"mean()"** or **"std()"** suffix for the mean and standard deviation of the signals, respectively, and an **"Avg."** prefix to indicate these have been averaged across all observations per Subject and Activity. All variables are numeric. Original measures are normalized and bounded within [-1,1].
+#### **Average Measures**
+A list of 66 measures averaged per Subject and Activity. I.e. the average of all observations perfomed by each subject on each activity. The measures are just a selection of the original dataset, namely those containing means and standard deviations of the Samsung collected signals. Variable names are the same of the original experiment, with a **"mean()"** or **"std()"** suffix for the mean and standard deviation of the signals, respectively, and an **"Avg."** prefix to indicate these have been averaged across all observations per Subject and Activity. All variables are numeric. Original measures are normalized and bounded within [-1,1].
 
 Explanation of Samsung originally collected signals ("features"):
 
